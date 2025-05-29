@@ -5,6 +5,12 @@
     font-family: "Poppins", sans-serif; 
 } 
 
+
+body { 
+    background-color: #181622;
+    color: white;
+}
+
 header {
     background-color: black;
     position: fixed;
@@ -76,8 +82,7 @@ a:hover {
 
 #services-section {
     text-align: center;
-  background-color: #E0E1DD;
-   padding: 60px 20px; /* Add space around content */
+    background-color: #0D1B2A;
 }
 
 .box { 
@@ -86,20 +91,32 @@ a:hover {
     flex-direction: column;
     border-radius: 10px; 
     padding: 15px 20px; 
-    flex: 1 1 300px; /* Allow the box to shrink/grow, min-width 300px */
-    background-color:#1B263B; 
+    flex: 1; 
+    background-color:#1B2D60; 
     margin: 20px 10px;
     font-family: 'Poppins', sans-serif;
     text-align: left;
     border: none; 
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-     color: #E0E1DD;
+    color: white; 
 }
 
 .row { 
     display: flex; 
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 10px; 
-     justify-content: center;
+}
+
+
+#about-section {
+    display: flex; 
+    flex-direction: column;  
+}
+
+.about-row {
+    display: flex; 
+    gap: 20px; 
+}
+
+.container {
+    gap: 20px; 
 }
