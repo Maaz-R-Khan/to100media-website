@@ -1,0 +1,33 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+} 
+
+header {
+    
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    top: fixed;
+    padding-right: 10px; 
+}
+
+.navbar-brand {
+    margin-right: auto;
+    color: blue; 
+    text-decoration: none;
+    padding: 10px; 
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
