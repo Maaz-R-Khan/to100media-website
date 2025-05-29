@@ -1,47 +1,53 @@
-* { 
-    margin: 0; 
-    padding: 0; 
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif; 
-} 
-
-
-body { 
-    background-color: #181622;
-    color: white;
+    font-family: "Poppins", sans-serif;
 }
 
+body {
+    background-color: #181622;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header Styling */
 header {
     background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it stays on top */
-
+    z-index: 1000;
+    padding: 0.4rem 1rem; /* Add padding to header for compactness */
 }
 
 header nav ul {
     display: flex;
-    list-style-type: none;
+    list-style: none;
     justify-content: flex-end;
-    top: fixed;
-    padding: 10px; 
+    padding: 0; /* Remove padding for tighter layout */
+    margin: 0; /* Remove default margin */
 }
 
 .navbar-brand {
     margin-right: auto;
-    color: white; 
+    color: white;
     text-decoration: none;
-    padding: 10px; 
+    padding: 0.3rem 0.5rem; /* Reduce padding */
+    font-size: 1.2rem; /* Adjust text size */
 }
 
 header nav ul li {
-    padding: 10px;
+    padding: 0 0.5rem; /* Reduce side padding for compactness */
 }
 
 header nav ul li a {
     text-decoration: none;
     color: white;
+    padding: 0.3rem 0.6rem; /* Compact link padding */
+    font-size: 0.95rem; /* Slightly smaller font */
+    transition: background-color 0.3s;
 }
 
 a:visited {
@@ -50,18 +56,20 @@ a:visited {
 
 a:hover {
     background-color: #415A77;
-    color: white; /* Ensure text is still readable */
+    color: white;
 }
 
+/* Hero Section */
 #hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* 100% of viewport height */
+    height: 100vh;
     overflow: hidden;
     color: white;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #hero h1 {
@@ -75,48 +83,101 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Covers the section without stretching */
-    z-index: -1; /* Optional: put video behind content */
+    object-fit: cover;
+    z-index: -1;
 }
 
-
+/* Services Section */
 #services-section {
-    text-align: center;
     background-color: #0D1B2A;
+    padding: 60px 20px;
 }
 
-.box { 
-    display: flex; 
-    border: solid; 
-    flex-direction: column;
-    border-radius: 10px; 
-    padding: 15px 20px; 
-    flex: 1; 
-    background-color:#1B2D60; 
-    margin: 20px 10px;
-    font-family: 'Poppins', sans-serif;
-    text-align: left;
-    border: none; 
-    color: white; 
+.card {
+    background-color: #1B2D60;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
 }
 
-.row { 
-    display: flex; 
-    flex-direction: row;
-    margin: 10px; 
+.card:hover {
+    transform: translateY(-5px);
 }
 
-
+/* About Section */
 #about-section {
-    display: flex; 
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-color: #143A52;
 }
 
 .about-row {
-    display: flex; 
-    gap: 20px; 
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
+.about-section {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.cta-button, button {
+    background-color: #415A77;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover, button:hover {
+    background-color: #294592;
+}
+
+/* Container Spacing for Bootstrap */
 .container {
-    gap: 20px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Responsive Layouts */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-row {
+        flex-direction: column;
+    }
 }

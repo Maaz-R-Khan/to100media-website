@@ -5,23 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To100 Media</title>
     <link href="./index.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--Navbar-->
-    <header>
-        <nav>
-            <ul>
-                <a class="navbar-brand" href="#">
-                    <h1>To100 Media</h1>
-                </a>
-                <li><a href="#showcase">Home</a></li>
-                <li><a href="#services-section">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact-us"><button class="btn btn-primary">Contact Us</button></a></li>
-            </ul>
-        </nav>
-    </header>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/images/to100logo.png" alt="To100 Media Logo" style="width:40px; margin-right:10px;">
+      <span>To100 Media</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#showcase">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services-section">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item">
+          <a class="btn btn-outline-light" href="#contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!--Hero Section-->
     <section id="hero"> 
@@ -34,88 +45,207 @@
     </section>
 
 
-   <!--Services Section-->
-<section>
-    <div id="services-section">
-        <h2>Our Services</h2>
+  <!-- Services Section -->
+<section id="services-section" class="py-5" style="background-color: #0D1B2A; color: white;">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <!-- Service Card -->
+      <div class="col-md-4">
+        <div class="card h-100" style="background-color:#1B2D60; color: white; border: none;">
+          <div class="card-body">
+            <h5 class="card-title">Custom Websites</h5>
+            <p class="card-text">We design responsive, high-performance websites tailored to your brand. From portfolios to e-commerce, we ensure a seamless user experience optimized for SEO and scalability.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Service Card -->
+      <div class="col-md-4">
+        <div class="card h-100" style="background-color:#1B2D60; color: white; border: none;">
+          <div class="card-body">
+            <h5 class="card-title">Web Application Development</h5>
+            <p class="card-text">We build dynamic, interactive web apps that streamline workflows and deliver results. Powered by React and Node.js, our apps are secure, scalable, and user-friendly.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div class="col-md-4">
+        <div class="card h-100" style="background-color:#1B2D60; color: white; border: none;">
+          <div class="card-body">
+            <h5 class="card-title">E-Commerce Solutions</h5>
+            <p class="card-text">We create e-commerce platforms with seamless navigation, secure payments, and custom product pages. Integrated with Stripe or PayPal and robust inventory management.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div class="col-md-4">
+        <div class="card h-100" style="background-color:#1B2D60; color: white; border: none;">
+          <div class="card-body">
+            <h5 class="card-title">Search Engine Optimization (SEO)</h5>
+            <p class="card-text">We enhance your website’s visibility with optimized structure, targeted keywords, and performance improvements to drive organic traffic and measurable growth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div class="col-md-4">
+        <div class="card h-100" style="background-color:#1B2D60; color: white; border: none;">
+          <div class="card-body">
+            <h5 class="card-title">Branding & Graphic Design</h5>
+            <p class="card-text">We craft compelling brand identities, from logos to social media assets, ensuring consistent, impactful visuals that resonate with your audience.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div class="col-md-4">
+        <div class="card h-100" style="background-color:#1B2D60; color: white; border: none;">
+          <div class="card-body">
+            <h5 class="card-title">Social Media Marketing</h5>
+            <p class="card-text">We amplify your online presence with targeted content, ad campaigns, and cross-platform strategies designed to engage audiences and boost brand awareness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="container py-5">
+    <h2 class="text-center mb-4">Testimonials</h2>
+    <div class="row g-4">
+        <div class="col-md-4 col-sm-6">
+            <img src="assets/images/testimonial.jpg" class="img-fluid rounded shadow-sm" alt="Testimonial 1">
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <img src="assets/images/testimonial-2.jpg" class="img-fluid rounded shadow-sm" alt="Testimonial 2">
+        </div> 
+        <!-- Add more screenshots as needed -->
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about-section" class="py-5" style="background-color: #0D1B2A; color: white;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Logo Column -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="assets/images/to100logo.png" class="img-fluid" alt="To100 Media Logo" style="max-width: 200px;">
+      </div>
+      
+      <!-- Content Column -->
+      <div class="col-md-8">
+        <h2 class="mb-3">About To100 Media</h2>
+        <h4 class="fw-light" style="color: #E0E1DD;">Where Creativity Meets Technology</h4>
+        <p>To100 Media is a dynamic digital marketing agency that specializes in creating innovative solutions for brands looking to stand out in today’s digital-first world. With a strong focus on custom website design, web app development, and strategic digital marketing, we bring your ideas to life through technology and creativity.</p>
+        
+        <p>Our mission: to empower businesses with digital tools that drive growth, engage audiences, and deliver results. Whether you're a startup or an established enterprise, we’re here to help you achieve 100% success.</p>
+
+        <p>We envision a world where businesses, regardless of size, access premium, tailored digital solutions that inspire innovation and foster connections. At To100 Media, we bridge creativity and technology to help brands lead their industries.</p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Why Choose Us?</h5>
+            <ul>
+              <li><strong>Tailored Solutions:</strong> Custom-built strategies for unique goals.</li>
+              <li><strong>Expert Team:</strong> Designers, developers, and strategists with years of experience.</li>
+              <li><strong>Proven Results:</strong> Measurable success across industries.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Our Core Values</h5>
+            <ul>
+              <li><strong>Innovation:</strong> Staying ahead with new tech and ideas.</li>
+              <li><strong>Collaboration:</strong> Partnering closely with clients.</li>
+              <li><strong>Excellence:</strong> High-quality solutions exceeding expectations.</li>
+              <li><strong>Integrity:</strong> Building trust with honesty and transparency.</li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#contact-us" class="btn btn-primary mt-3">Work With Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="container py-5">
+  <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+  
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          What services does To100 Media offer?
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          To100 Media provides custom websites, web applications, e-commerce solutions, SEO, branding, graphic design, and social media marketing.
+        </div>
+      </div>
+    </div>
     
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          How long does a typical project take?
+        </button>
+      </h2>
+      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Timelines vary based on complexity, but typical projects take between 2 to 8 weeks. Contact us for a tailored timeline!
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          Do you provide ongoing support?
+        </button>
+      </h2>
+      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Absolutely! We offer maintenance, updates, and digital marketing services to keep your online presence thriving.
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more FAQs as needed -->
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+  <div class="container">
     <div class="row">
-        <div class="box">
-            <h3>Custom Websites</h3>
-            <p>We design responsive, high-performance websites tailored to your brand. From portfolios to e-commerce, we ensure a seamless user experience optimized for SEO and scalability.</p>
-        </div>
-    
-        <div class="box">
-            <h3>Web Application Development</h3>
-            <p>We build dynamic, interactive web apps that streamline workflows and deliver results. Powered by modern frameworks like React and Node.js, our apps are secure, scalable, and user-friendly.</p>
-        </div>
-    
-        <div class="box">
-            <h3>E-Commerce Solutions</h3>
-            <p>We create e-commerce platforms that drive conversions with seamless navigation, secure payments, and custom product pages. Our solutions integrate with gateways like Stripe or PayPal and include robust inventory management.</p>
-        </div>
-    
+      <div class="col-md-4 mb-3">
+        <h5>To100 Media</h5>
+        <p>Innovating the web, one project at a time.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#services-section" class="text-white">Services</a></li>
+          <li><a href="#portfolio" class="text-white">Portfolio</a></li>
+          <li><a href="#about" class="text-white">About Us</a></li>
+          <li><a href="#contact-us" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Follow Us</h5>
+        <a href="#" class="text-white me-3">Instagram</a>
+        <a href="#" class="text-white me-3">LinkedIn</a>
+        <a href="#" class="text-white">Twitter</a>
+      </div>
     </div>
-       
-
-<div class="row">
-    <div class="box">
-            <h3>Search Engine Optimization (SEO)</h3>
-            <p>We enhance your website’s visibility with optimized structure, targeted keywords, and performance improvements, driving organic traffic and measurable growth.</p>
-        </div>
-    
-        <div class="box">
-            <h3>Branding & Graphic Design</h3>
-            <p>We craft compelling brand identities, from logos to social media assets, ensuring consistent, impactful visuals that resonate with your audience..</p>
-        </div>
-    
-        <div class="box">
-            <h3>Social Media Marketing</h3>
-            <p>We amplify your online presence with targeted content, ad campaigns, and cross-platform strategies, designed to engage audiences and boost brand awareness.</p>
-        </div>
+    <div class="text-center mt-3">
+      &copy; 2025 To100 Media. All rights reserved.
     </div>
-</div>
-</section>
-
-<!--About Us Section-->
-<section class="about-row">
-<img src="assets/images/to100logo.png" width="200px">
-<div class="about-section"> 
-    <h2>About To100 Media</h2>
-    <br>
-    <div class="container"> 
-    <h3>Where Creativity Meets Technology</h3>
-    <br>
-    <p>To100 Media is a dynamic digital marketing agency that specializes in creating innovative solutions for brands looking to stand out in today’s digital-first world. With a strong focus on custom website design, web application development, and strategic digital marketing, we bring your ideas to life through cutting-edge technology and creative expertise.</p>
-    <br>
-    <p>Our mission is simple: to empower businesses with powerful digital tools and strategies that drive growth, engage audiences, and deliver measurable results. Whether you're a small startup or an established enterprise, we’re here to help you achieve 100% success.</p>
-   <br>     
-    <p>We envision a world where businesses, regardless of size, have access to premium, tailor-made digital solutions that inspire innovation and foster connections. At To100 Media, we strive to bridge creativity and technology to help brands not just compete, but lead in their industries.</p>
-    </div>
-
-    <div class="container"> 
-    <h3>Why Choose Us?</h3>
-    <ul>
-        <li><strong>Tailored Solutions:</strong> We believe every business is unique, which is why our solutions are custom-built to meet your goals and challenges.</li>
-        <li><strong>Expert Team:</strong> Our team of designers, developers, and strategists bring years of experience and passion to every project.</li>
-        <li><strong>Proven Results:</strong> From boosting online visibility to enhancing user experience, we’ve helped brands achieve measurable success.</li>
-    </ul>
-   </div>
-    
-   <div class="container"> 
-    <h3>Our Core Values</h3>
-    <ul>
-        <li><strong>Innovation:</strong> We embrace new technologies and ideas to stay ahead in a constantly evolving digital landscape.</li>
-        <li><strong>Collaboration:</strong> We work closely with our clients to ensure their vision is realized at every step.</li>
-        <li><strong>Excellence:</strong> We are committed to delivering high-quality solutions that exceed expectations.</li>
-        <li><strong>Integrity:</strong> We value honesty and transparency, building long-term relationships with our clients.</li>
-    </ul>
-    </div>
-    
-    <a href="#contact-us" class="cta-button">Work With Us</a>
-</div>
-</div>
-</section>
+  </div>
+</footer>
     
 </body>
 </html>
