@@ -22,10 +22,10 @@
     
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#showcase">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#services-section">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
         <li class="nav-item">
           <a class="btn btn-outline-light" href="#contact-us">Contact Us</a>
         </li>
@@ -40,7 +40,7 @@
         <video src="assets/video/agentsVid.mp4" autoplay loop muted playsinline> </video> 
         <h1>Welcome to To100 Media</h1>
         <p>This is where innovation meets impact.</p>
-        <button>EXPLORE</button>
+         <a href="#services-section" class="btn btn-primary">EXPLORE</a> <!-- Use anchor instead of button -->
         </div>
     </section>
 
@@ -143,7 +143,7 @@
       </div>
       
       <!-- Content Column -->
-      <div class="col-md-8">
+      <div class="col-md-8" id="aboutus">
         <h2 class="mb-3">About To100 Media</h2>
         <h4 class="fw-light" style="color: #E0E1DD;">Where Creativity Meets Technology</h4>
         <p>To100 Media is a dynamic digital marketing agency that specializes in creating innovative solutions for brands looking to stand out in today’s digital-first world. With a strong focus on custom website design, web app development, and strategic digital marketing, we bring your ideas to life through technology and creativity.</p>
@@ -224,8 +224,79 @@
     <!-- Add more FAQs as needed -->
   </div>
 </section>
+<section id="contact-us" class="py-5" style="background-color: #0D1B2A; color: white;">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
 
-<footer class="bg-dark text-white py-4">
+    <!-- Contact Form -->
+    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="row g-3">
+      <input type="hidden" name="access_key" value="cfd5b190-0309-44bd-aaae-cc2e4738723d" />
+      <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+      <input type="checkbox" name="botcheck" style="display:none;" />
+
+      <!-- Full Name -->
+      <div class="col-md-6">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" name="name" class="form-control bg-dark text-white border-0" placeholder="John Doe" required>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" name="email" class="form-control bg-dark text-white border-0" placeholder="you@company.com" required>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="text" name="phone" class="form-control bg-dark text-white border-0" placeholder="+1 (555) 1234-567" required>
+      </div>
+
+      <!-- Message -->
+      <div class="col-12">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea name="message" class="form-control bg-dark text-white border-0" placeholder="Your Message" rows="4" required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary px-4">Send Message</button>
+      </div>
+
+      <!-- Result Message -->
+      <div class="col-12">
+        <p id="formResult" class="text-center mt-3"></p>
+      </div>
+    </form>
+  </div>
+
+  <!-- Success/Failure Handling -->
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    const result = document.getElementById('formResult');
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        result.textContent = "🎉 Thank you! We'll be in touch shortly.";
+        result.style.color = 'lightgreen';
+        contactForm.reset();
+      } else {
+        result.textContent = "⚠️ Oops! Something went wrong. Please try again.";
+        result.style.color = 'red';
+      }
+    });
+  </script>
+</section>
+
+<footer class="bg-black text-white py-4">
   <div class="container">
     <div class="row">
       <div class="col-md-4 mb-3">

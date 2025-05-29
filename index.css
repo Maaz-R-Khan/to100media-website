@@ -44,10 +44,18 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: white;
+    color: white; 
     padding: 0.3rem 0.6rem; /* Compact link padding */
     font-size: 0.95rem; /* Slightly smaller font */
     transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #E0E1DD !important; /* Optional: off-white on hover */
+    background-color: transparent; /* Optional: remove bg */
 }
 
 a:visited {
